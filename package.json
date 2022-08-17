@@ -21,6 +21,7 @@
     "build:browser": "rollup --config build/rollup.config.browser.js",
     "build:es": "rollup --config build/rollup.config.es.js",
     "build:umd": "rollup --config build/rollup.config.umd.js",
+    "prepack": "npm run build",
     "prepublishOnly": "npm run build && npm run lint && npm run test",
     "lint": "eslint . --ext js",
     "serve": "serve -p 8080",

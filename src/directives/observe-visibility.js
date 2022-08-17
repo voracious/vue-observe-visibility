@@ -114,7 +114,7 @@ function unbind (el) {
 }
 
 export default {
-	bind,
+	inserted: bind,
 	update,
 	unbind,
 }
